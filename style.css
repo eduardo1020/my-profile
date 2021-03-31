@@ -1,0 +1,221 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    border: 1px solid red;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 99.90%;
+    height: 99.80%;
+    background: rgba(9, 9, 121, 1);
+
+}
+
+.box div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.box div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5) {
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+
+.my-name {
+    border: 1px solid blue;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+i {
+    margin-right: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.information {
+    background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+    border: 1px solid green;
+}
+
+img {
+    border: 6px solid #fff;
+    border-radius: 50%;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media i {
+    font-size: 2.2em;
+    color: rgba(9, 9, 121, 1);
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.typing-animation {
+    animation: animate-name 900ms infinite normal, typing 4s 1s  both normal;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 25em;
+    }
+}
+
+@keyframes animate-name {
+    from {
+        border-right-color: #fff;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/*-------------- media queries --------------*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 1.0em;
+    }   
+
+    .information {
+        height: 60vh;
+    }
+
+    img {
+        width: 160px;
+        height: 160px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -25%;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .information {
+        width: 25%;
+        height: 55vh;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -20%;
+    }
+}
