@@ -107,6 +107,26 @@ h2 {
     font-size: 1.4em;
 }
 
+#portfolio-button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(9, 9, 121, 1);
+    color: white;
+    text-transform: uppercase;
+}
+
+#portfolio-button:hover {
+    background-color: white;
+    color: rgb(71, 71, 233);
+    border: 1px solid rgba(9, 9, 121, 1);
+}
+
 .information {
     background-color: #fff;
     border-radius: 20px;
@@ -170,10 +190,13 @@ img {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     h1 {
-        font-size: 1.0em;
+        text-align: center;
+        font-size: 0.8em;
+        margin-top: -100px;
     }   
 
     .information {
+        font-size: 0.6em;
         height: 60vh;
     }
 
@@ -185,21 +208,92 @@ img {
         margin-right: auto;
         margin-top: -25%;
     }
+
+    .box div {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        text-align: center;
+        font-size: 0.8em;
+    }   
 
+    .information {
+        font-size: 0.6em;
+        height: 60vh;
+    }
+
+    img {
+        width: 160px;
+        height: 160px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -25%;
+    }
+
+    .box div {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        text-align: center;
+        font-size: 1.2em;
+    }   
 
+    .information {
+        margin: 0 auto;
+        font-size: 0.7em;
+        width: 40vw;
+        height: 60vh;
+    }
+
+    img {
+        width: 160px;
+        height: 160px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -25%;
+    }
+
+    .box div {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        text-align: center;
+        font-size: 1.8em;
+        margin-top: -40px;
+    }   
 
+    .information {
+        margin: 0 auto;
+        font-size: 0.7em;
+        width: 40vw;
+        height: 60vh;
+    }
+
+    img {
+        width: 160px;
+        height: 160px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -25%;
+    }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
