@@ -6,12 +6,11 @@ html, body {
 }
 
 .container {
-    border: 1px solid red;
     height: 100%;
     position: absolute;
     overflow: hidden;
-    width: 99.90%;
-    height: 99.80%;
+    width: 100%;
+    height: 100%;
     background: rgba(9, 9, 121, 1);
 
 }
@@ -85,7 +84,6 @@ html, body {
 }
 
 .my-name {
-    border: 1px solid blue;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -131,7 +129,6 @@ h2 {
     background-color: #fff;
     border-radius: 20px;
     color: #000;
-    border: 1px solid green;
 }
 
 img {
@@ -197,7 +194,7 @@ img {
 
     .information {
         font-size: 0.6em;
-        height: 60vh;
+        height: 70vh;
     }
 
     img {
@@ -253,7 +250,7 @@ img {
         margin: 0 auto;
         font-size: 0.7em;
         width: 40vw;
-        height: 60vh;
+        height: 75vh;
     }
 
     img {
@@ -283,7 +280,7 @@ img {
         margin: 0 auto;
         font-size: 0.7em;
         width: 40vw;
-        height: 60vh;
+        height: 75vh;
     }
 
     img {
@@ -300,7 +297,7 @@ img {
 @media (min-width: 1200px) {
     .information {
         width: 25%;
-        height: 55vh;
+        height: 65vh;
         margin: 0 auto;
     }
 
